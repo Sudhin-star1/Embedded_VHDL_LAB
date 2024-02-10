@@ -1,10 +1,31 @@
 v 4
-file . "full_adder_tb.vhd" "3fb9ea9c872312a6a34dee638320f9e041537e10" "20240209080657.606":
-  entity full_adder_tb at 1( 0) + 0 on 17;
-  architecture tb of full_adder_tb at 7( 88) + 0 on 18;
-file . "full_adder.vhd" "815b7c9a710d11a459e2c1e0a8a086ce93105484" "20240209080657.590":
-  entity full_adder at 1( 0) + 0 on 15;
-  architecture behavioral of full_adder at 12( 237) + 0 on 16;
-file . "HelloWorld.vhd" "2e22d5d463aca97e61d99971b54821d5305d7c8d" "20240209073023.719":
-  entity helloworld at 2( 24) + 0 on 11;
-  architecture behavioral of helloworld at 8( 106) + 0 on 12;
+file . "sequence_detector_tb.vhdl" "b20ca24803cb26e2e4141f873c44d28d3b1a1329" "20240210083019.858":
+  entity sequence_detector_tb at 1( 0) + 0 on 29;
+  architecture testbench of sequence_detector_tb at 7( 109) + 0 on 30;
+file . "sequence_detector.vhdl" "763a82672be4cb0f7bc363c2cfd92cb7e8ad87d0" "20240210083019.857":
+  entity sequence_detector at 1( 0) + 0 on 27;
+  architecture behavioral of sequence_detector at 12( 229) + 0 on 28;
+file . "bcd_counter_seven_segment_tb.vhdl" "513c40fa2edcab0e4f658c203a0d042892a41a17" "20240210074435.069":
+  entity bcd_counter_seven_segment_tb at 1( 0) + 0 on 21;
+  architecture testbench of bcd_counter_seven_segment_tb at 8( 151) + 0 on 22;
+file . "bcd_counter_seven_segment.vhdl" "05789ddd7290fa7369fe932f2eb074525975376b" "20240210074435.067":
+  entity bcd_counter_seven_segment at 1( 0) + 0 on 19;
+  architecture behavioral of bcd_counter_seven_segment at 13( 277) + 0 on 20;
+file . "decoder_3to8_tb.vhdl" "658c95333941473e300d43817e2a3af725b6ecef" "20240210040440.513":
+  entity decoder_3to8_tb at 1( 0) + 0 on 13;
+  architecture testbench of decoder_3to8_tb at 7( 99) + 0 on 14;
+file . "decoder_3to8.vhdl" "07b4e059b841a16cb6f4541fdeadc5a4982daf3a" "20240210040440.512":
+  entity decoder_3to8 at 1( 0) + 0 on 11;
+  architecture behavioral of decoder_3to8 at 11( 196) + 0 on 12;
+file . "lcm_fsm.vhdl" "6f914da7d1a12ec264f5de95ceeb572fee9761ef" "20240210041222.924":
+  entity lcm_fsm at 1( 0) + 0 on 15;
+  architecture behavioral of lcm_fsm at 17( 366) + 0 on 16;
+file . "lcm_fsm_tb.vhdl" "f98c311227a7c9d1a91d13565657bcd88cf74db2" "20240210041222.926":
+  entity lcm_fsm_tb at 1( 0) + 0 on 17;
+  architecture testbench of lcm_fsm_tb at 8( 115) + 0 on 18;
+file . "d_flipflop.vhdl" "124c8efd545db7f4a53078c6fafbdaa84df4c690" "20240210081838.031":
+  entity d_flipflop at 1( 0) + 0 on 23;
+  architecture behavioral of d_flipflop at 11( 176) + 0 on 24;
+file . "d_flipflop_tb.vhdl" "b1ac19308db159f3f6665af9d611e8eded827713" "20240210081838.032":
+  entity d_flipflop_tb at 1( 0) + 0 on 25;
+  architecture testbench of d_flipflop_tb at 7( 95) + 0 on 26;

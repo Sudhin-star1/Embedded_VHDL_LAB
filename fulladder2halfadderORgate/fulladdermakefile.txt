@@ -1,0 +1,17 @@
+full adder using 2 half adder and or gate 
+
+ghdl -a full_adder.vhdl
+
+ghdl -a or_gate.vhdl
+
+ghdl -a full_adder_tb.vhdl
+
+ghdl -a half_adder.vhdl
+
+ghdl -e full_adder_tb
+
+ghdl -r full_adder_tb --vcd=result.vcd
+
+
+
+gtkwave result.vcd

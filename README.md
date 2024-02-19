@@ -21,9 +21,9 @@ Follow the instructions on the [GTKWave github repository](https://github.com/gt
    # Example command for running GHDL
         ghdl -a your_test_bench.vhd
         ghdl -e your_test_bench
-        ghdl -r your_test_bench --wave=wave.ghw
+        ghdl -r your_test_bench --vcd=result.vcd
 
 
   
 # Example command for GTKWave
-          gtkwave wave.ghw
+          gtkwave result.vcd

@@ -14,3 +14,8 @@ begin
     Sum <= A XOR B XOR Cin;
     Cout <= (A AND B) OR (Cin AND A) OR (Cin AND B);
 end Behavioral;
+
+
+
+
+

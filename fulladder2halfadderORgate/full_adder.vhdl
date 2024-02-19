@@ -16,7 +16,7 @@ entity full_adder is
 end full_adder;
 
 
-architecture behavior of full_adder is
+architecture structural of full_adder is
 
     component half_adder is
 
@@ -55,5 +55,5 @@ begin
 
     w3: or_gate port map (c1, c2, cout);
 
-end behavior;
+end structural;
 

@@ -13,5 +13,19 @@ Modular design using half adders and an OR gate.
 
 Clear and concise code structure for easy understanding and modification.
 
+## Command to run
+
+     ghdl -a full_adder.vhdl
+
+    ghdl -a or_gate.vhdl
+
+    ghdl -a full_adder_tb.vhdl
+
+    ghdl -a half_adder.vhdl
+
+    ghdl -e full_adder_tb
+
+    ghdl -r full_adder_tb --vcd=result.vcd
+
 ## WAVEFORM 
 <img src="https://github.com/Sudhin-star1/Embedded_VHDL_LAB/blob/main/fulladder2halfadderORgate/Screenshot%20(421).png">

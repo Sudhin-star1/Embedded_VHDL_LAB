@@ -16,14 +16,14 @@ Follow the instructions on the [GHDL github repository](https://github.com/ghdl/
 ## Installing GTKWave🔃
 Follow the instructions on the [GTKWave github repository](https://github.com/gtkwave/gtkwave) to install GTKWave on your system.
 
-      ``` git clone https://github.com/Sudhin-star1/Embedded_VHDL_LAB/
+       git clone https://github.com/Sudhin-star1/Embedded_VHDL_LAB/
 
-  ` # Example command for running GHDL
-  ghdl -a your_test_bench.vhd
-  ghdl -e your_test_bench
-  ghdl -r your_test_bench --wave=wave.ghw
+   # Example command for running GHDL
+        ghdl -a your_test_bench.vhd
+        ghdl -e your_test_bench
+        ghdl -r your_test_bench --wave=wave.ghw
 
 
-  ```
-    # Example command for GTKWave
-    gtkwave wave.ghw
+  
+# Example command for GTKWave
+          gtkwave wave.ghw

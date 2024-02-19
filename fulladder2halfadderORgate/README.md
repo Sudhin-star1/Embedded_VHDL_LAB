@@ -27,5 +27,7 @@ Clear and concise code structure for easy understanding and modification.
 
     ghdl -r full_adder_tb --vcd=result.vcd
 
+    gtkwave result.vcd
+
 ## WAVEFORM 
 <img src="https://github.com/Sudhin-star1/Embedded_VHDL_LAB/blob/main/fulladder2halfadderORgate/Screenshot%20(421).png">

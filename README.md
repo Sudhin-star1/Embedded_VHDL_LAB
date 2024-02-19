@@ -16,6 +16,12 @@ Follow the instructions on the [GHDL github repository](https://github.com/ghdl/
 ## Installing GTKWave🔃
 Follow the instructions on the [GTKWave github repository](https://github.com/gtkwave/gtkwave) to install GTKWave on your system.
 
+## Installing GTKWave🔃
+ #installing vhdl and gtkwave in ubuntu
+             ```sudo apt install vhdl
+                    sudo apt install gtkwave
+
+## Getting started with this repo🔃
        git clone https://github.com/Sudhin-star1/Embedded_VHDL_LAB/
 
    # Example command for running GHDL

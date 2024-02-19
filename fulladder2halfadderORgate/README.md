@@ -1,4 +1,4 @@
-### Full Adder VHDL Implementation
+## Full Adder VHDL Implementation
 
 A VHDL implementation of a full adder circuit, composed of half adders and an OR gate, along with a testbench to verify its functionality.
 
@@ -10,5 +10,5 @@ Includes a testbench for functional verification.
 Modular design using half adders and an OR gate.
 Clear and concise code structure for easy understanding and modification.
 
-##WAVEFORM 
+## WAVEFORM 
 <img src="https://github.com/Sudhin-star1/Embedded_VHDL_LAB/blob/main/fulladder2halfadderORgate/Screenshot%20(421).png">

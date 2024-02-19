@@ -18,8 +18,9 @@ Follow the instructions on the [GTKWave github repository](https://github.com/gt
 
 ## Installing GTKWave🔃
  #installing vhdl and gtkwave in ubuntu
-             ```sudo apt install vhdl
-                    sudo apt install gtkwave
+ 
+        sudo apt install vhdl
+        sudo apt install gtkwave
 
 ## Getting started with this repo🔃
        git clone https://github.com/Sudhin-star1/Embedded_VHDL_LAB/

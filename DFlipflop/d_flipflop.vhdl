@@ -23,3 +23,4 @@ begin
     Q <= internal_Q;
     Q_bar <= not internal_Q;
 end architecture behavioral;
+

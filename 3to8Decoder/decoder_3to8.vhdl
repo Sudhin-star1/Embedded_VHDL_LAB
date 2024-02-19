@@ -19,3 +19,4 @@ begin
     Y6 <= A and B and (not C);
     Y7 <= A and B and C;
 end architecture behavioral;
+

@@ -56,3 +56,7 @@ begin
 
     sequence_detected <= '1' when state = DETECTED else '0';
 end architecture behavioral;
+
+
+
+

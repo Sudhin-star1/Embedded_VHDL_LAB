@@ -14,7 +14,7 @@ A half adder is a combinational circuit that performs the addition of two single
 | 1 | 1 | 0 | 1 |
 
 
-![Half Adder Circuit](https://github.com/niranjandahal/Embedded_VHDL_LAB/edit/main/halfadder/halfadder.jng)
+![Half Adder Circuit](https://github.com/niranjandahal/Embedded_VHDL_LAB/blob/main/halfadder/halfadder.jpg)
 
 
 
@@ -43,7 +43,7 @@ A half adder is a combinational circuit that performs the addition of two single
 
 
   #Simulation Image
-![Half Adder Circuit_outpur](https://github.com/niranjandahal/Embedded_VHDL_LAB/edit/main/halfadder/halfaddersimulation.jng)  
+![Half Adder Circuit_outpur](https://github.com/niranjandahal/Embedded_VHDL_LAB/edit/main/halfadder/halfaddersimulation.jpg)  
 
 2. **Integration**: Integrate the half adder module into your larger VHDL designs for arithmetic operations.
 

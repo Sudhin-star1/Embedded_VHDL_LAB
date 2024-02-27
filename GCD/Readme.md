@@ -13,7 +13,7 @@ The GCD calculator is implemented using a finite state machine (FSM) architectur
 
 ## Finite State Machine (FSM) Diagram
 
-![gcd_fsm_diagram](https://github.com/niranjandahal/Embedded_VHDL_LAB/new/main/GCD/gcdfsm.png)
+![gcd_fsm_diagram](https://github.com/niranjandahal/Embedded_VHDL_LAB/blob/main/GCD/gcdfsm.png)
 
 
 ## To Run
@@ -27,5 +27,5 @@ ghdl -r your_test_bench --vcd=result.vcd --stop-time=10us
 
 ## Simulation Images
 
-![gcd_simulation_diagram](https://github.com/niranjandahal/Embedded_VHDL_LAB/new/main/GCD/gcdfsm.png)
+![gcd_simulation_diagram](https://github.com/niranjandahal/Embedded_VHDL_LAB/blob/main/GCD/gcdsimulation.png)
 

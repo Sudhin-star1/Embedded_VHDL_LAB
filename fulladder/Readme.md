@@ -18,6 +18,9 @@ A full adder is a combinational circuit that performs the addition of three sing
 | 1 | 1 |  1  |  1  |  1   |
 
 
+
+![Full Adder Circuit](https://github.com/niranjandahal/Embedded_VHDL_LAB/blob/main/halfadder/fulladder.png)
+
 ## Files
 
 - `full_adder.vhd`: VHDL code for the full adder entity and its behavioral architecture.
@@ -29,8 +32,16 @@ A full adder is a combinational circuit that performs the addition of three sing
 
 ## To Run
 
-```bash
-ghdl -a your_vhdl_code.vhd
-ghdl -a your_test_bench.vhd
-ghdl -e your_test_bench
-ghdl -r your_test_bench --vcd=result.vcd --stop-time=10us
+  ```bash
+  ghdl -a your_vhdl_code.vhd
+  ghdl -a your_test_bench.vhd
+  ghdl -e your_test_bench
+  ghdl -r your_test_bench --vcd=result.vcd --stop-time=10us
+  ```
+
+## SImulation Images
+
+
+![Full Adder Circuit_outpur](https://github.com/niranjandahal/Embedded_VHDL_LAB/blob/main/halfadder/fulladdersimulation.png)
+
+

@@ -26,7 +26,7 @@ This project provides VHDL code for a full adder circuit, which is a fundamental
 
 
 ## Circuit diagram
-![Full Adder Using_Two_half_adder_Circuit](https://github.com/niranjandahal/Embedded_VHDL_LAB/blob/main/fulladder/fulladder.png)
+![Full Adder Using_Two_half_adder_Circuit](https://github.com/niranjandahal/Embedded_VHDL_LAB/blob/main/fulladder2halfadderORgate/fulladdertwohalfadder.png)
 
 
 ## Command to run

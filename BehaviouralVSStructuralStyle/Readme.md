@@ -1,46 +1,106 @@
 # VHDL Architecture Styles Overview
 
-This repository provides an overview of three main architecture styles in VHDL: Behavioral, Structural, and Dataflow. Each style offers distinct advantages and is used for different purposes in designing digital circuits.
-
-## Overview
-
-In VHDL, architecture styles play a crucial role in defining the behavior and structure of digital systems. Understanding these styles helps in efficiently designing and implementing complex circuits.
+In VHDL, architecture can be described in three main styles: 
+This repository provides an overview of two main architecture styles in VHDL: Behavioral, Structural. Each style offers distinct advantages and is used for different purposes in designing digital circuits.
 
 ### 1. Behavioral Style Architecture
 
-Behavioral style describes the functionality of the system in an algorithmic manner. It focuses on the behavior of the circuit outputs in response to inputs, often implemented using sequential statements within process blocks.
+This style describes the behavior or functionality of the system in an algorithmic manner. It model how the circuit outputs will behave to the circuits inputs.This model may not refleecy how the circuit is implemented when it is synthesized.in this style the internal working is implemented using sequential statements within process statements.
 
-#### Pros:
-- Quick to implement
-- Easier to understand algorithmic behavior
-- Suitable for high-level modeling
+# Pros: 
+  Quick to implement, easier to understand algorithmic behavior, suitable for high-level modeling.
+  
+# Cons: 
+  May not reflect hardware structure accurately, lower reusability due to specific algorithms.
 
-#### Cons:
-- May not reflect hardware structure accurately
-- Lower reusability due to specific algorithms
+## Example of behavioral style architecture:
+
+  library IEEE;
+  use IEEE.STD_LOGIC_1164.ALL;
+  ENTITY HALF_ADDER IS
+  PORT (
+      A, B : IN STD_LOGIC;
+      SUM, CARRY : OUT STD_LOGIC
+  );
+  END ENTITY HALF_ADDER;
+  
+  ARCHITECTURE BEHAVIORAL OF HALF_ADDER IS
+  BEGIN
+      PROCESS (A, B)
+      BEGIN
+          SUM <= A XOR B;
+          CARRY <= A AND B;
+      END PROCESS;
+  END ARCHITECTURE BEHAVIORAL;
+
 
 ### 2. Structural Style Architecture
 
-Structural style represents the system as interconnected components. It decomposes complex designs into simpler, reusable components, where each component resembles a physical piece of hardware like a logic gate or flip-flop.
+This style describes the system as a collection of interconnected components.It is most useful when designing complex systems by breaking them down into simpler, reusable components.Each component is a placeholder for a design entity and represents a physical piece of hardware, such as a logic gate or a flip-flop.The architecture body in structural style consists of component instantiation statements, which specify how these components are interconnected.
 
-#### Pros:
-- Offers better control over hardware structure
-- Facilitates component reuse
-- Suitable for complex designs
+# Pros:
+Offers better control over hardware structure, facilitates component reuse, suitable for complex designs.
 
-#### Cons:
-- Requires more effort for interconnections
-- May be more complex to understand initially
+# Cons:
+Requires more effort for interconnections, may be more complex to understand initially.
 
-## File Structure
+## Example of structural style architecture:
 
-- `behavioral_style.vhdl`: Example of VHDL code demonstrating the behavioral style architecture.
-- `structural_style.vhdl`: Example of VHDL code demonstrating the structural style architecture.
-- `README.md`: This README file providing an overview of VHDL architecture styles.
 
-## Usage
+  library IEEE;
+  use IEEE.STD_LOGIC_1164.ALL;
+  
+  ENTITY TEST IS
+  PORT (
+      A, B, C, D : IN STD_LOGIC;
+      Z : OUT STD_LOGIC
+  );
+  END ENTITY TEST;
+  
+  ARCHITECTURE TEST_ARCH OF TEST IS
+  
+  COMPONENT AND_GATE
+  PORT (
+      X, Y : IN STD_LOGIC;
+      when : OUT STD_LOGIC
+  );
+  END COMPONENT;
+  
+  COMPONENT OR_GATE
+  PORT (
+      X, Y : IN STD_LOGIC;
+      when : OUT STD_LOGIC
+  );
+  END COMPONENT;
+  
+  SIGNAL E,F: STD_LOGIC;
+  
+  BEGIN
+      U1: AND_GATE PORT MAP (X=>A, Y=>B, W=>E);
+      U2: AND_GATE PORT MAP (X=>C, Y=>D, W=>F);
+      U3: OR_GATE PORT MAP (X=>E, Y=>F, W=>Z);
+  END ARCHITECTURE TEST_ARCH;
 
-Clone the repository and explore the provided VHDL files to understand the implementation of different architecture styles.
 
-```bash
-git clone https://github.com/your-username/vhdl-architecture-styles.git
+
+## Overall difference
+
+
+|  Behavioral Style                           | Structural Style                               |
+| --------------------------------------------| -----------------------------------------------|
+| Describes behavior or functionality         | Describes as interconnected components         |
+| Behavior and algorithmic description        | Component interconnections and hierarchy       |
+| Abstract, algorithmic                       | Concrete, specific component instances         |
+| Higher level of abstraction                 | Lower level of abstraction                     |
+| Sequential statements within processes      | Instantiation of predefined components         |
+| Quick algorithmic modeling                  | Complex system decomposition                   |
+| Easier for algorithmic descriptions         | May require more effort for interconnections   |
+| Suitable for less complex designs           | Better for managing complexity                 |
+| May not reflect hardware implementation     | Reflects actual hardware structure             |
+| Easier to debug due to algorithmic nature   | May require more attention to interconnections |
+| Lower reusability due to algorithmic nature | Higher reusability of components               |
+
+
+
+
+

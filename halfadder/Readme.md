@@ -31,3 +31,5 @@ To run the testbench:
 2. Simulate the compiled design using a simulator (e.g., GHDL or ModelSim).
 
 ## Screenshots
+![Half_Adder](HA_SD.png)
+![Half_Adder](HA.png)

@@ -89,3 +89,12 @@ OVERALL DIFFERENCE
 | May not reflect hardware implementation     | Reflects actual hardware structure             |
 | Easier to debug due to algorithmic nature   | May require more attention to interconnections |
 | Lower reusability due to algorithmic nature | Higher reusability of components               |
+
+
+
+
+
+
+
+
+

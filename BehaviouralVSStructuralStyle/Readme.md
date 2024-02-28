@@ -3,14 +3,14 @@
 In VHDL, architecture can be described in three main styles: 
 This repository provides an overview of two main architecture styles in VHDL: Behavioral, Structural. Each style offers distinct advantages and is used for different purposes in designing digital circuits.
 
-### 1. Behavioral Style Architecture
+## 1. Behavioral Style Architecture
 
 This style describes the behavior or functionality of the system in an algorithmic manner. It model how the circuit outputs will behave to the circuits inputs.This model may not refleecy how the circuit is implemented when it is synthesized.in this style the internal working is implemented using sequential statements within process statements.
 
-# Pros: 
+### Pros: 
   Quick to implement, easier to understand algorithmic behavior, suitable for high-level modeling.
   
-# Cons: 
+### Cons: 
   May not reflect hardware structure accurately, lower reusability due to specific algorithms.
 
 ## Example of behavioral style architecture:
@@ -34,14 +34,14 @@ This style describes the behavior or functionality of the system in an algorithm
   END ARCHITECTURE BEHAVIORAL;
 
 
-### 2. Structural Style Architecture
+## 2. Structural Style Architecture
 
 This style describes the system as a collection of interconnected components.It is most useful when designing complex systems by breaking them down into simpler, reusable components.Each component is a placeholder for a design entity and represents a physical piece of hardware, such as a logic gate or a flip-flop.The architecture body in structural style consists of component instantiation statements, which specify how these components are interconnected.
 
-# Pros:
+### Pros:
 Offers better control over hardware structure, facilitates component reuse, suitable for complex designs.
 
-# Cons:
+### Cons:
 Requires more effort for interconnections, may be more complex to understand initially.
 
 ## Example of structural style architecture:

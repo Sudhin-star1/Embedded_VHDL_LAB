@@ -15,23 +15,26 @@ This style describes the behavior or functionality of the system in an algorithm
 
 ## Example of behavioral style architecture:
 
-  library IEEE;
-  use IEEE.STD_LOGIC_1164.ALL;
-  ENTITY HALF_ADDER IS
-  PORT (
-      A, B : IN STD_LOGIC;
-      SUM, CARRY : OUT STD_LOGIC
-  );
-  END ENTITY HALF_ADDER;
-  
-  ARCHITECTURE BEHAVIORAL OF HALF_ADDER IS
-  BEGIN
-      PROCESS (A, B)
-      BEGIN
-          SUM <= A XOR B;
-          CARRY <= A AND B;
-      END PROCESS;
-  END ARCHITECTURE BEHAVIORAL;
+
+
+    library IEEE;
+    use IEEE.STD_LOGIC_1164.ALL;
+    ENTITY HALF_ADDER IS
+    PORT (
+        A, B : IN STD_LOGIC;
+        SUM, CARRY : OUT STD_LOGIC
+    );
+    END ENTITY HALF_ADDER;
+    
+    ARCHITECTURE BEHAVIORAL OF HALF_ADDER IS
+    BEGIN
+        PROCESS (A, B)
+        BEGIN
+            SUM <= A XOR B;
+            CARRY <= A AND B;
+        END PROCESS;
+    END ARCHITECTURE BEHAVIORAL;
+
 
 
 ## 2. Structural Style Architecture
@@ -47,43 +50,46 @@ Requires more effort for interconnections, may be more complex to understand ini
 ## Example of structural style architecture:
 
 
-  library IEEE;
-  use IEEE.STD_LOGIC_1164.ALL;
-  
-  ENTITY TEST IS
-  PORT (
-      A, B, C, D : IN STD_LOGIC;
-      Z : OUT STD_LOGIC
-  );
-  END ENTITY TEST;
-  
-  ARCHITECTURE TEST_ARCH OF TEST IS
-  
-  COMPONENT AND_GATE
-  PORT (
-      X, Y : IN STD_LOGIC;
-      when : OUT STD_LOGIC
-  );
-  END COMPONENT;
-  
-  COMPONENT OR_GATE
-  PORT (
-      X, Y : IN STD_LOGIC;
-      when : OUT STD_LOGIC
-  );
-  END COMPONENT;
-  
-  SIGNAL E,F: STD_LOGIC;
-  
-  BEGIN
-      U1: AND_GATE PORT MAP (X=>A, Y=>B, W=>E);
-      U2: AND_GATE PORT MAP (X=>C, Y=>D, W=>F);
-      U3: OR_GATE PORT MAP (X=>E, Y=>F, W=>Z);
-  END ARCHITECTURE TEST_ARCH;
+    library IEEE;
+    use IEEE.STD_LOGIC_1164.ALL;
+    
+    ENTITY TEST IS
+    PORT (
+        A, B, C, D : IN STD_LOGIC;
+        Z : OUT STD_LOGIC
+    );
+    END ENTITY TEST;
+    
+    ARCHITECTURE TEST_ARCH OF TEST IS
+    
+    COMPONENT AND_GATE
+    PORT (
+        X, Y : IN STD_LOGIC;
+        when : OUT STD_LOGIC
+    );
+    END COMPONENT;
+    
+    COMPONENT OR_GATE
+    PORT (
+        X, Y : IN STD_LOGIC;
+        when : OUT STD_LOGIC
+    );
+    END COMPONENT;
+    
+    SIGNAL E,F: STD_LOGIC;
+    
+    BEGIN
+        U1: AND_GATE PORT MAP (X=>A, Y=>B, W=>E);
+        U2: AND_GATE PORT MAP (X=>C, Y=>D, W=>F);
+        U3: OR_GATE PORT MAP (X=>E, Y=>F, W=>Z);
+    END ARCHITECTURE TEST_ARCH;
 
 
 
 ## Overall difference
+
+
+
 
 
 |  Behavioral Style                           | Structural Style                               |

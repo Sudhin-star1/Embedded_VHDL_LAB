@@ -45,4 +45,4 @@ Each test case is applied for a duration of 10 ns.
 The testbench observes the output lines (`Y0` to `Y7`) of the decoder and reports them accordingly.
 
 ## Screenshot
-(https://github.com/Sudhin-star1/Embedded_VHDL_LAB/edit/main/3to8Decoder/Readme.md#:~:text=3to8.-,png,-Readme.md)
+![3-to-8 Decoder Diagram](3to8.png)
